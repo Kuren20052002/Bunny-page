@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    font-family: "Zen Kaku";
+    letter-spacing: 8px;
+    color: white;
+}
+
+.logo-png {
+    flex-shrink: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    font-size: 18px;
+}
+
+
+.ice-cream-button {
+    font-family: "Zen Kaku";
+    font-size: 18px;
+    letter-spacing: 8px;
+    padding-right: 0;
+    color: white;
+    border: solid 2px white;
+    background-color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+    vertical-align: middles;
+}
+
+.nav-links #nav-link {
+    border: solid 2px black;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 8px;
+}
+
+.nav-links li{
+    transition: 0.2s;
+}
+
+.nav-links li:hover {
+    transform: scale(1.15);
+}
+
+.nav-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: Zen Kaku;
+    src: url(Fonts/ZenKakuGothicNew-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
