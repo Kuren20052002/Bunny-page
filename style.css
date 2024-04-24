@@ -97,15 +97,7 @@ a{
 
 .hero {
     width: 100%;
-    height: 600px;
-}
-
-.hero-bg {
-    position: fixed;
-    height: 1000px;
-    top: -10px;
-    left: 0;
-    z-index: -2;
+    height: 580px;
 }
 
 .hero-quote{
@@ -137,7 +129,7 @@ a{
     position: absolute;
     padding-right: 1000px;
     width: 100%;
-    height: 600px;
+    height: 580px;
     margin: 0;
     box-sizing:border-box;
     background-image: linear-gradient(to right, rgb(255, 255, 255, 0.9), rgba(0, 0, 0, 0));
