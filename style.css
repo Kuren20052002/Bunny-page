@@ -15,6 +15,7 @@ body {
     justify-content: left;
     align-items: center;
     width: 100%;
+    padding-top: 10px;
     font-family: "Zen Kaku";
     background-image: linear-gradient(to right, rgb(255, 255, 255, 0.9), rgba(0, 0, 0, 0));
     background-size: 100%;
@@ -75,11 +76,14 @@ body {
 }
 
 .nav-bg {
-    position: fixed;
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
     top: 0;
     left: 0;
     flex-shrink: 0;
     width: 100%;
+    height: 100%;   
     z-index: -1;
 }
 
@@ -100,19 +104,55 @@ body {
     font-family: "Zen Kaku Light";
     line-height: 40px;
     letter-spacing: 10px;
-    font-size: 48px;
+    font-size: 56px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-top: 20%;
+    color: red;
+    text-shadow: 3px 3px 2px rgb(185, 0, 0);
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.hero-quote:hover {
+    height: 2500px;
     width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-image: url(Img/Bikini.jpg)
+}
+
+.gradient {
+    position: absolute;
+    padding-right: 1000px;
+    width: 100%;
+    height: 600px;
     margin: 0;
     box-sizing:border-box;
     background-image: linear-gradient(to right, rgb(255, 255, 255, 0.9), rgba(0, 0, 0, 0));
     padding: 15% 30px;
     padding-right: 60%;
-    color: red;
-    text-shadow: 3px 3px 2px rgb(185, 0, 0);
+    z-index: -1;
 }
 
+.bio {
+    font-family: "Raleway";
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-top: 25%;
+    width: 40%;
+    color: rgb(125, 110, 110, 0.7);
+    position: absolute;
 
+}
 
 .information {
     display: flex;
@@ -172,14 +212,44 @@ body {
     font-size: 18px;
     font-style: italic;
     color: #f7f7f7;
-    transition: 0.4s;
+    transition: all 0.4s;
 }
 
-li .source:hover{
+.source:hover{
     transform: scale(1.9);
+    color:black;
 }
 
+.quote{
+    display: flex;
+    width: 100%;
+    height:500px;
+    justify-content: center;
+    align-items: center;
+}
 
+.beach-eye-candy {
+    position: absolute;
+    counter-reset: ;
+    z-index: -1;
+    height: inherit;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.beach-quote {
+    font-family: "Raleway";
+    font-size: 64px;
+    text-shadow: 0 0 100px rgba(98, 0, 255);
+    transition: all 0.3s;
+    color:white;
+    font-weight: 900;
+    text-align: center;
+}   
+
+.beach-quote:hover{
+    transform: scale(1.3);
+}
 
 @font-face {
     font-family: Zen Kaku;
